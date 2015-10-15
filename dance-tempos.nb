@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     93871,       2475]
-NotebookOptionsPosition[     91109,       2378]
-NotebookOutlinePosition[     91466,       2394]
-CellTagsIndexPosition[     91423,       2391]
+NotebookDataLength[     93981,       2481]
+NotebookOptionsPosition[     91282,       2386]
+NotebookOutlinePosition[     91639,       2402]
+CellTagsIndexPosition[     91596,       2399]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,9 +30,11 @@ Cell["Lucas Garron, October 2015", "Subtitle",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"version", "=", "\"\<1.3\>\""}], ";"}]], "Input",
+  RowBox[{"version", "=", "\"\<1.3.1\>\""}], ";"}]], "Input",
  InitializationCell->True,
- CellChangeTimes->{{3.653904324773675*^9, 3.6539043398494587`*^9}}],
+ CellChangeTimes->{{3.653904324773675*^9, 3.6539043398494587`*^9}, {
+  3.653915811668058*^9, 3.653915811841131*^9}, {3.653916631514387*^9, 
+  3.65391663163865*^9}}],
 
 Cell[CellGroupData[{
 
@@ -40,70 +42,36 @@ Cell["Settings", "Section",
  CellChangeTimes->{{3.653823702724135*^9, 3.6538237032914124`*^9}, {
   3.6538242989885073`*^9, 3.653824300120829*^9}}],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"tempos", "=", GridBox[{
-     {"1", "\"\<Cross-Step Waltz\>\"", "105", "114", "122", "125", "True"},
-     {"1", "\"\<Fast Waltz\>\"", "160", "170", "200", "210", "False"},
-     {"1", "\"\<Rotary Waltz\>\"", "135", "140", "160", "170", "False"},
-     {"2", "\"\<Lindy Hop\>\"", "135", "140", "170", "180", "False"},
-     {"2", "\"\<Sweet Lindy\>\"", "110", "115", "135", "140", "True"},
-     {"3", "\"\<6-Count Swing\>\"", "80", "85", "105", "115", "False"},
-     {"3", "\"\<4-Count Swing\>\"", "115", "120", "140", "145", "True"},
-     {"4", "\"\<West Coast Swing\>\"", "90", "100", "120", "130", "True"},
-     {"4", "\"\<Blues\>\"", "60", "65", "90", "100", "False"},
-     {"5", "\"\<Club 2-Step\>\"", "75", "80", "85", "90", "False"},
-     {"5", "\"\<Cha-Cha\>\"", "110", "115", "125", "130", "True"},
-     {"5", "\"\<Salsa\>\"", "85", "90", "100", "110", "False"},
-     {"6", "\"\<Foxtrot\>\"", "130", "135", "170", "180", "False"},
-     {"6", "\"\<One-Step\>\"", "110", "115", "130", "135", "True"},
-     {"6", "\"\<Quickstep\>\"", "85", "90", "105", "110", "False"},
-     {"7", "\"\<Polka\>\"", "105", "110", "125", "140", "True"},
-     {"7", "\"\<Schottische\>\"", "145", "150", "165", "170", "False"},
-     {"8", "\"\<Tango\>\"", "115", "120", "130", "140", "True"},
-     {"10", "\"\<Hustle\>\"", "110", "115", "125", "130", "True"},
-     {"9", "\"\<Merengue\>\"", "110", "115", "130", "135", "True"},
-     {"11", "\"\<Walking\>\"", "90", "100", "120", "130", "True"}
-    },
-    GridBoxDividers->{
-     "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
-      "RowsIndexed" -> {}}]}], ";"}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.6538238308011312`*^9, 3.653823856523219*^9}, {
-   3.653824095096278*^9, 3.6538240954311237`*^9}, {3.653824876052267*^9, 
-   3.6538249112435627`*^9}, {3.653824954066792*^9, 3.6538250468008337`*^9}, {
-   3.653826166312317*^9, 3.653826255895357*^9}, {3.653826341242495*^9, 
-   3.653826432405538*^9}, 3.653827666330433*^9, {3.653827901948621*^9, 
-   3.653827922475786*^9}, {3.653906079842217*^9, 3.65390608072301*^9}, {
-   3.653906865546212*^9, 3.653906867063192*^9}, {3.6539070488838987`*^9, 
-   3.653907055298279*^9}, {3.653907142361231*^9, 3.653907180895138*^9}, {
-   3.653907355118305*^9, 3.653907355325603*^9}, {3.653907541478743*^9, 
-   3.65390756658854*^9}, {3.6539076111901417`*^9, 3.653907612145574*^9}, {
-   3.653907844248212*^9, 3.653907851847293*^9}, {3.653912933664886*^9, 
-   3.653912934822631*^9}, {3.653914092346375*^9, 3.65391410827505*^9}, {
-   3.653914183357243*^9, 3.653914186242982*^9}, {3.653914312696776*^9, 
-   3.653914318431226*^9}, {3.6539144172438707`*^9, 3.653914417386331*^9}, {
-   3.653914531514698*^9, 3.653914535705366*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"tempoLabels", " ", "=", " ", GridBox[{
-     {"\"\<90 \:2044 180\>\"", "90", "False"},
-     {"\"\<100\>\"", "100", "False"},
-     {"\"\<110\>\"", "110", "True"},
-     {"\"\<120\>\"", "120", "True"},
-     {"\"\<130\>\"", "130", "True"},
-     {"\"\<140\>\"", "140", "True"},
-     {"\"\<75 \:2044 150\>\"", "150", "False"},
-     {"\"\<80 \:2044 160\>\"", "160", "False"},
-     {"\"\<85 \:2044 170\>\"", "170", "False"}
-    },
-    GridBoxDividers->{
-     "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
-      "RowsIndexed" -> {}}]}], ";"}]], "Input",
- InitializationCell->True],
-
 Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"tempos", "=", GridBox[{
+      {"1", "\"\<Cross-Step Waltz\>\"", "105", "115", "122", "125", "True"},
+      {"1", "\"\<Fast Waltz\>\"", "160", "170", "200", "210", "False"},
+      {"1", "\"\<Rotary Waltz\>\"", "135", "140", "160", "170", "False"},
+      {"2", "\"\<Lindy Hop\>\"", "135", "140", "170", "180", "False"},
+      {"2", "\"\<Sweet Lindy\>\"", "110", "115", "135", "140", "True"},
+      {"3", "\"\<6-Count Swing\>\"", "80", "85", "105", "115", "False"},
+      {"3", "\"\<4-Count Swing\>\"", "115", "120", "140", "145", "True"},
+      {"4", "\"\<West Coast Swing\>\"", "90", "100", "120", "130", "True"},
+      {"4", "\"\<Blues / Fusion\>\"", "60", "65", "90", "100", "False"},
+      {"5", "\"\<Club 2-Step\>\"", "75", "80", "85", "90", "False"},
+      {"5", "\"\<Cha-Cha\>\"", "110", "115", "125", "130", "True"},
+      {"5", "\"\<Salsa\>\"", "85", "90", "100", "110", "False"},
+      {"6", "\"\<Foxtrot\>\"", "130", "135", "170", "180", "False"},
+      {"6", "\"\<One-Step\>\"", "110", "115", "130", "135", "True"},
+      {"6", "\"\<Quickstep\>\"", "85", "90", "105", "110", "False"},
+      {"7", "\"\<Polka\>\"", "105", "110", "125", "140", "True"},
+      {"7", "\"\<Schottische\>\"", "145", "150", "165", "170", "False"},
+      {"8", "\"\<Tango\>\"", "115", "120", "130", "140", "True"},
+      {"10", "\"\<Hustle\>\"", "110", "115", "125", "130", "True"},
+      {"9", "\"\<Merengue\>\"", "110", "115", "130", "135", "True"},
+      {"11", "\"\<Walking\>\"", "90", "100", "120", "130", "True"}
+     },
+     GridBoxDividers->{
+      "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+       "RowsIndexed" -> {}}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"colors", "=", 
    RowBox[{"{", 
@@ -126,8 +94,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.92, 0.67, 0.06666666666666667]"],
        Appearance->None,
@@ -261,8 +230,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.33, 0.36, 0.91]"],
        Appearance->None,
@@ -304,8 +274,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.12, 0.74, 0.92]"],
        Appearance->None,
@@ -347,8 +318,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0., 0.74, 0.52]"],
        Appearance->None,
@@ -395,8 +367,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.06666666666666667, 0.5700000000000001, \
 0.7000000000000001]"],
@@ -487,8 +460,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.07, 0.18, 0.52]"],
        Appearance->None,
@@ -533,8 +507,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.8200000000000001, 0.61, 0.11]"],
        Appearance->None,
@@ -578,8 +553,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.8, 0.36, 0.07]"],
        Appearance->None,
@@ -758,8 +734,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.15825131609063858, 0.8300000000000001, 0.]"],
        Appearance->None,
@@ -988,8 +965,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.9400000000000001, 0.42, 0.76]"],
        Appearance->None,
@@ -1033,8 +1011,9 @@ Cell[BoxData[{
           
           ImageSize->
            Dynamic[{
-            Automatic, 1.35 CurrentValue["FontCapHeight"]/
-             AbsoluteCurrentValue[Magnification]}],
+            Automatic, 
+             1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           PlotRangePadding->None], "\[InvisibleSpace]"}],
         "RGBColor[0.2, 0.2, 0.2]"],
        Appearance->None,
@@ -1073,17 +1052,42 @@ Cell[BoxData[{
       RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "colors", ",", "List"}], 
    "]"}], ";"}]}], "Input",
  InitializationCell->True,
- CellChangeTimes->{
-  3.6538240288019876`*^9, 3.653826301512364*^9, 3.653826334318438*^9, 
-   3.653826446168234*^9, 3.653826488928792*^9, 3.653826521730103*^9, {
-   3.65382762428519*^9, 3.653827650576068*^9}, {3.653906671754623*^9, 
-   3.653906721799533*^9}, {3.653906760833953*^9, 3.653906776296301*^9}, {
-   3.653906811251255*^9, 3.653906812003565*^9}, {3.6539073707081003`*^9, 
-   3.653907425193919*^9}, {3.653907622865383*^9, 3.653907625653118*^9}, {
-   3.653907726386724*^9, 3.653907800207841*^9}, {3.653908026110991*^9, 
-   3.653908109315959*^9}, {3.653914114202691*^9, 3.653914138216526*^9}, 
-   3.6539147113746967`*^9, {3.653914746262834*^9, 3.653914751084581*^9}, 
-   3.653915069403207*^9, 3.653915101969244*^9}],
+ CellChangeTimes->{{3.6538238308011312`*^9, 3.653823856523219*^9}, {
+   3.653824095096278*^9, 3.6538240954311237`*^9}, {3.653824876052267*^9, 
+   3.6538249112435627`*^9}, {3.653824954066792*^9, 3.6538250468008337`*^9}, {
+   3.653826166312317*^9, 3.653826255895357*^9}, {3.653826341242495*^9, 
+   3.653826432405538*^9}, 3.653827666330433*^9, {3.653827901948621*^9, 
+   3.653827922475786*^9}, {3.653906079842217*^9, 3.65390608072301*^9}, {
+   3.653906865546212*^9, 3.653906867063192*^9}, {3.6539070488838987`*^9, 
+   3.653907055298279*^9}, {3.653907142361231*^9, 3.653907180895138*^9}, {
+   3.653907355118305*^9, 3.653907355325603*^9}, {3.653907541478743*^9, 
+   3.65390756658854*^9}, {3.6539076111901417`*^9, 3.653907612145574*^9}, {
+   3.653907844248212*^9, 3.653907851847293*^9}, {3.653912933664886*^9, 
+   3.653912934822631*^9}, {3.653914092346375*^9, 3.65391410827505*^9}, {
+   3.653914183357243*^9, 3.653914186242982*^9}, {3.653914312696776*^9, 
+   3.653914318431226*^9}, {3.6539144172438707`*^9, 3.653914417386331*^9}, {
+   3.653914531514698*^9, 3.653914535705366*^9}, {3.653915798426779*^9, 
+   3.653915799321055*^9}, {3.653915857092841*^9, 3.653915858761936*^9}, {
+   3.6539159331333513`*^9, 3.6539159333007793`*^9}, {3.653919898368354*^9, 
+   3.6539198985784492`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"tempoLabels", " ", "=", " ", GridBox[{
+     {"\"\<90 \:2044 180\>\"", "90", "False"},
+     {"\"\<100\>\"", "100", "False"},
+     {"\"\<110\>\"", "110", "True"},
+     {"\"\<120\>\"", "120", "True"},
+     {"\"\<130\>\"", "130", "True"},
+     {"\"\<140\>\"", "140", "True"},
+     {"\"\<75 \:2044 150\>\"", "150", "False"},
+     {"\"\<80 \:2044 160\>\"", "160", "False"},
+     {"\"\<85 \:2044 170\>\"", "170", "False"}
+    },
+    GridBoxDividers->{
+     "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+      "RowsIndexed" -> {}}]}], ";"}]], "Input",
+ InitializationCell->True],
 
 Cell[CellGroupData[{
 
@@ -1483,7 +1487,7 @@ Cell[BoxData[{
    3.6538253187531767`*^9, 3.653825326286631*^9}, {3.653825382372726*^9, 
    3.653825406056674*^9}, {3.653825548962097*^9, 3.653825648570313*^9}, {
    3.653825723519457*^9, 3.653825748230445*^9}, {3.6539142173485823`*^9, 
-   3.653914250500248*^9}}],
+   3.653914250500248*^9}, {3.653916638073634*^9, 3.65391664734477*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1555,7 +1559,7 @@ Cell[BoxData[{
     RowBox[{"subtitleOffset", "=", "0.3"}], ";"}], "*)"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"title", "=", 
+  RowBox[{"title", ":=", 
    RowBox[{"{", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"Translate", "[", 
@@ -1589,14 +1593,14 @@ Cell[BoxData[{
     "\[IndentingNewLine]", "}"}]}], ";"}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.653426841272181*^9, 3.653426908008059*^9}, {
-  3.653427083954371*^9, 3.653427084432865*^9}, {3.653427405694529*^9, 
-  3.65342740817323*^9}, {3.6534302028960133`*^9, 3.6534302029652233`*^9}, {
-  3.653430826928804*^9, 3.653430829008841*^9}, {3.653430869803179*^9, 
-  3.6534308699132957`*^9}, {3.653430901625929*^9, 3.65343092514084*^9}, {
-  3.6538241191843576`*^9, 3.653824120942902*^9}, {3.653824162664468*^9, 
-  3.653824163583777*^9}, {3.653824334120261*^9, 3.653824345314501*^9}, {
-  3.6539064310471687`*^9, 3.6539064360510597`*^9}, {3.653906928691702*^9, 
-  3.653906943515099*^9}}]
+   3.653427083954371*^9, 3.653427084432865*^9}, {3.653427405694529*^9, 
+   3.65342740817323*^9}, {3.6534302028960133`*^9, 3.6534302029652233`*^9}, {
+   3.653430826928804*^9, 3.653430829008841*^9}, {3.653430869803179*^9, 
+   3.6534308699132957`*^9}, {3.653430901625929*^9, 3.65343092514084*^9}, {
+   3.6538241191843576`*^9, 3.653824120942902*^9}, {3.653824162664468*^9, 
+   3.653824163583777*^9}, {3.653824334120261*^9, 3.653824345314501*^9}, {
+   3.6539064310471687`*^9, 3.6539064360510597`*^9}, {3.653906928691702*^9, 
+   3.653906943515099*^9}, 3.653915832531118*^9}]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -2330,7 +2334,7 @@ Cell[BoxData[{
    3.653910647994733*^9, 3.6539106747238083`*^9}}],
 
 Cell[BoxData["\<\"/Users/lgarron/Dropbox/Graphics/Dance Tempo \
-Chart/social-dance-tempos-v1.3.svg\"\>"], "Output",
+Chart/social-dance-tempos-v1.3.1.svg\"\>"], "Output",
  CellChangeTimes->{
   3.653827726624295*^9, 3.6538278140652657`*^9, 3.653830592053315*^9, 
    3.6539044142502823`*^9, {3.653906230796352*^9, 3.653906253912216*^9}, 
@@ -2341,10 +2345,12 @@ Chart/social-dance-tempos-v1.3.svg\"\>"], "Output",
    3.653910391967373*^9, 3.653910505128199*^9, 3.653910592685659*^9, 
    3.6539106241677094`*^9, 3.65391294037125*^9, 3.653912975070464*^9, 
    3.653914146676362*^9, 3.653914569602913*^9, 3.653914668631398*^9, 
-   3.653914720048298*^9, 3.653915074190208*^9}],
+   3.653914720048298*^9, 3.653915074190208*^9, 3.653915106789559*^9, 
+   3.653915244155486*^9, {3.653915816674087*^9, 3.653915866912882*^9}, 
+   3.653915938584413*^9, 3.653916744053479*^9}],
 
 Cell[BoxData["\<\"/Users/lgarron/Dropbox/Graphics/Dance Tempo \
-Chart/social-dance-tempos-v1.3.png\"\>"], "Output",
+Chart/social-dance-tempos-v1.3.1.png\"\>"], "Output",
  CellChangeTimes->{
   3.653827726624295*^9, 3.6538278140652657`*^9, 3.653830592053315*^9, 
    3.6539044142502823`*^9, {3.653906230796352*^9, 3.653906253912216*^9}, 
@@ -2355,7 +2361,9 @@ Chart/social-dance-tempos-v1.3.png\"\>"], "Output",
    3.653910391967373*^9, 3.653910505128199*^9, 3.653910592685659*^9, 
    3.6539106241677094`*^9, 3.65391294037125*^9, 3.653912975070464*^9, 
    3.653914146676362*^9, 3.653914569602913*^9, 3.653914668631398*^9, 
-   3.653914720048298*^9, 3.6539150853852997`*^9}]
+   3.653914720048298*^9, 3.653915074190208*^9, 3.653915106789559*^9, 
+   3.653915244155486*^9, {3.653915816674087*^9, 3.653915866912882*^9}, 
+   3.653915938584413*^9, 3.653916753565812*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -2396,85 +2404,83 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[579, 22, 176, 2, 92, "Title"],
 Cell[758, 26, 161, 2, 51, "Subtitle"],
-Cell[922, 30, 178, 4, 28, "Input",
+Cell[922, 30, 277, 6, 28, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[1125, 38, 146, 2, 64, "Section"],
-Cell[1274, 42, 2761, 43, 399, "Input",
+Cell[1224, 40, 146, 2, 64, "Section"],
+Cell[1373, 44, 40547, 1027, 462, "Input",
  InitializationCell->True],
-Cell[4038, 87, 627, 16, 183, "Input",
- InitializationCell->True],
-Cell[4668, 105, 38071, 980, 49, "Input",
+Cell[41923, 1073, 627, 16, 183, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[42764, 1089, 96, 1, 44, "Subsection"],
+Cell[42575, 1093, 96, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[42885, 1094, 415, 11, 46, "Input"],
-Cell[43303, 1107, 2621, 68, 346, "Output"]
+Cell[42696, 1098, 415, 11, 46, "Input"],
+Cell[43114, 1111, 2621, 68, 346, "Output"]
 }, Open  ]],
-Cell[45939, 1178, 616, 16, 80, "Input"],
+Cell[45750, 1182, 616, 16, 80, "Input"],
 Cell[CellGroupData[{
-Cell[46580, 1198, 183, 3, 28, "Input"],
-Cell[46766, 1203, 6541, 214, 1243, "Output"]
+Cell[46391, 1202, 183, 3, 28, "Input"],
+Cell[46577, 1207, 6541, 214, 1243, "Output"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[53368, 1424, 90, 1, 64, "Section"],
-Cell[53461, 1427, 2402, 58, 269, "Input",
+Cell[53179, 1428, 90, 1, 64, "Section"],
+Cell[53272, 1431, 2447, 58, 269, "Input",
  InitializationCell->True],
-Cell[55866, 1487, 1279, 34, 46, "Input",
+Cell[55722, 1491, 1279, 34, 46, "Input",
  InitializationCell->True],
-Cell[57148, 1523, 385, 8, 80, "Input"],
-Cell[57536, 1533, 217, 3, 28, "Input"]
+Cell[57004, 1527, 385, 8, 80, "Input"],
+Cell[57392, 1537, 217, 3, 28, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57790, 1541, 92, 1, 64, "Section"],
-Cell[57885, 1544, 2326, 54, 267, "Input",
+Cell[57646, 1545, 92, 1, 64, "Section"],
+Cell[57741, 1548, 2357, 54, 216, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[60248, 1603, 71, 1, 50, "Section"],
+Cell[60135, 1607, 71, 1, 50, "Section"],
 Cell[CellGroupData[{
-Cell[60344, 1608, 99, 1, 44, "Subsection"],
-Cell[60446, 1611, 293, 8, 28, "Input"],
-Cell[60742, 1621, 6056, 167, 386, "Input",
+Cell[60231, 1612, 99, 1, 44, "Subsection"],
+Cell[60333, 1615, 293, 8, 28, "Input"],
+Cell[60629, 1625, 6056, 167, 386, "Input",
  InitializationCell->True],
-Cell[66801, 1790, 2241, 64, 165, "Input",
+Cell[66688, 1794, 2241, 64, 165, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[69079, 1859, 243, 3, 36, "Subsection"],
-Cell[69325, 1864, 697, 16, 64, "Input",
+Cell[68966, 1863, 243, 3, 36, "Subsection"],
+Cell[69212, 1868, 697, 16, 64, "Input",
  InitializationCell->True],
-Cell[70025, 1882, 614, 17, 97, "Input",
+Cell[69912, 1886, 614, 17, 97, "Input",
  InitializationCell->True],
-Cell[70642, 1901, 5250, 134, 590, "Input",
+Cell[70529, 1905, 5250, 134, 590, "Input",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[75929, 2040, 93, 1, 36, "Subsection"],
-Cell[76025, 2043, 6807, 144, 335, "Input",
+Cell[75816, 2044, 93, 1, 36, "Subsection"],
+Cell[75912, 2047, 6807, 144, 335, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[82881, 2193, 141, 2, 64, "Section"],
-Cell[83025, 2197, 2857, 65, 216, "Input",
+Cell[82768, 2197, 141, 2, 64, "Section"],
+Cell[82912, 2201, 2857, 65, 216, "Input",
  InitializationCell->True],
-Cell[85885, 2264, 771, 11, 28, "Input"]
+Cell[85772, 2268, 771, 11, 28, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[86693, 2280, 90, 1, 64, "Section"],
+Cell[86580, 2284, 90, 1, 64, "Section"],
 Cell[CellGroupData[{
-Cell[86808, 2285, 2193, 44, 267, "Input"],
-Cell[89004, 2331, 825, 12, 28, "Output"],
-Cell[89832, 2345, 827, 12, 28, "Output"]
+Cell[86695, 2289, 2193, 44, 267, "Input"],
+Cell[88891, 2335, 969, 14, 28, "Output"],
+Cell[89863, 2351, 969, 14, 28, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[90708, 2363, 91, 1, 64, "Section"],
-Cell[90802, 2366, 279, 8, 131, "Subsubsection"]
+Cell[90881, 2371, 91, 1, 64, "Section"],
+Cell[90975, 2374, 279, 8, 131, "Subsubsection"]
 }, Closed]]
 }, Open  ]]
 }
